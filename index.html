@@ -1,0 +1,426 @@
+<!doctype html><html lang="es"><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}
+.render{margin:44px 0 0;background:var(--navy-0);border:2px solid var(--line);border-radius:24px;padding:clamp(12px,3vw,28px)}
+.render img{display:block;width:100%;height:auto;border-radius:14px}
+.render figcaption{margin-top:12px;font-size:14px;color:var(--dim)}
+.photos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:44px}
+.photos figure{margin:0}
+.photos img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:18px}
+.photos figcaption{margin-top:8px;font-family:var(--display);font-weight:600;font-size:15px;color:var(--cream)}
+.go{display:flex;flex-direction:column;gap:22px;align-items:flex-start;margin-top:28px}
+@media (max-width:900px){.photos{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.photos{grid-template-columns:minmax(0,1fr)}}
+</style></head><body>
+<title>Eco en Cevisama · Stand B70</title>
+<meta name="description" content="Ven a escuchar tu cerámica. Invitación, planta, render y merchandising del stand B70 de Eco en Cevisama (proyecto universitario).">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap">
+<style>
+/* Concepto: una sola página que sigue la visita al stand B70. Fondo azul noche, cobre como acento,
+   bandas crema para 4C y merch. Las ondas del logo se repiten como círculos de sonido. */
+:root{
+  --navy:#14213D; --navy-2:#1A2746; --navy-0:#0E182E; --line:#3A4868;
+  --coral:#E4644A; --terra:#C8553D; --terra-dk:#B9492F; --sage:#8FA998;
+  --cream:#F4EFE6; --cream-2:#E3DCCD; --ink:#14213D; --ink-2:#4A4F5C; --muted:#BFC6D4; --dim:#8C95A8;
+  --display:'Outfit',Arial,Helvetica,sans-serif; --text:'Manrope',Arial,Helvetica,sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--navy);color:var(--cream);font-family:var(--text);font-size:17px;line-height:1.55;-webkit-text-size-adjust:100%}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--navy-0);z-index:30}
+h1,h2,h3,p{margin:0}
+h1,h2,h3{font-family:var(--display);text-wrap:balance}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--coral);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1160px;margin-inline:auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.eyebrow{font-family:var(--display);font-weight:600;font-size:14px;letter-spacing:.2em;text-transform:uppercase;color:var(--sage)}
+.on-cream .eyebrow{color:var(--terra-dk)}
+section{padding-block:clamp(56px,9vw,112px)}
+h2{font-size:clamp(32px,5.4vw,60px);line-height:1.04;letter-spacing:-.02em;font-weight:700}
+h2 em{font-style:normal;color:var(--coral)}
+.on-cream h2 em{color:var(--terra)}
+.lead{font-size:clamp(17px,2vw,20px);color:var(--muted);max-width:60ch}
+.on-cream{background:var(--cream);color:var(--ink)}
+.on-cream .lead{color:var(--ink-2)}
+
+/* cabecera */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--navy-0);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px;flex-wrap:wrap}
+.bar svg{display:block;height:34px;width:auto}
+nav{display:flex;gap:6px;overflow-x:auto;max-width:100%;scrollbar-width:none}
+nav::-webkit-scrollbar{display:none}
+nav a{font-family:var(--display);font-weight:600;font-size:15px;text-decoration:none;color:var(--muted);padding:8px 14px;border-radius:999px;white-space:nowrap}
+nav a:hover{color:var(--cream);background:var(--navy-2)}
+nav a.cta{background:var(--coral);color:var(--navy)}
+nav a.cta:hover{background:var(--cream)}
+
+/* portada */
+.hero{position:relative;overflow:hidden;background:radial-gradient(circle at 78% 40%,#22325A 0%,var(--navy) 55%,var(--navy-0) 100%);padding-block:clamp(56px,10vw,128px)}
+.rings{position:absolute;right:-12%;top:50%;width:min(80vw,760px);aspect-ratio:1;transform:translateY(-50%);pointer-events:none}
+.rings i{position:absolute;inset:0;margin:auto;width:30%;aspect-ratio:1;border:3px solid var(--cream);border-radius:50%;opacity:0;animation:wave 5s cubic-bezier(.2,.6,.3,1) infinite}
+.rings i:nth-child(2){animation-delay:1.66s}.rings i:nth-child(3){animation-delay:3.33s}
+@keyframes wave{0%{transform:scale(.4);opacity:.45}100%{transform:scale(3.4);opacity:0}}
+.hero .in{position:relative;display:flex;flex-direction:column;gap:28px;align-items:flex-start}
+.hero h1{font-size:clamp(44px,9.5vw,112px);line-height:.96;letter-spacing:-.045em;font-weight:700;max-width:12ch}
+.hero h1 em{font-style:normal;color:var(--coral)}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{font-family:var(--display);font-weight:600;font-size:16px;padding:9px 18px;border-radius:999px;background:var(--navy-2);border:2px solid var(--line)}
+.chip.hot{background:var(--coral);border-color:var(--coral);color:var(--navy)}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{font-family:var(--display);font-weight:700;font-size:18px;text-decoration:none;padding:14px 26px;border-radius:999px;border:2px solid var(--cream);color:var(--cream);background:transparent;cursor:pointer}
+.btn.solid{background:var(--cream);color:var(--navy)}
+.btn:hover{background:var(--coral);border-color:var(--coral);color:var(--navy)}
+
+/* invitacion */
+.inv{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(32px,6vw,80px);align-items:center;margin-top:48px}
+.phone{justify-self:center;width:min(100%,340px);background:var(--navy-0);border:3px solid var(--line);border-radius:44px;padding:30px 24px 28px;box-shadow:0 0 0 8px var(--navy-2),0 30px 80px rgba(0,0,0,.45);display:flex;flex-direction:column;gap:14px}
+.phone .sym{width:62px;height:auto}
+.phone h3{font-size:32px;line-height:1.08;letter-spacing:-.02em;font-weight:700}
+.phone h3 em{font-style:normal;color:var(--coral)}
+.phone .sub{font-size:14px;color:var(--muted)}
+.tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.tile{position:relative;aspect-ratio:1;border:0;border-radius:16px;cursor:pointer;color:var(--cream);font-family:var(--display);font-weight:700;font-size:14px;display:flex;align-items:flex-end;justify-content:center;padding:0 0 10px;overflow:hidden;background-color:var(--terra)}
+.tile[data-k=liso]{background-color:var(--terra)}
+.tile[data-k=perforado]{background-color:var(--terra-dk);background-image:radial-gradient(circle,rgba(20,33,61,.6) 0 3.5px,transparent 4px);background-size:16px 16px}
+.tile[data-k=poroso]{background-color:#8a4533;background-image:radial-gradient(circle at 30% 30%,rgba(20,33,61,.38) 0 5px,transparent 6px),radial-gradient(circle at 70% 60%,rgba(20,33,61,.38) 0 4px,transparent 5px),radial-gradient(circle at 40% 80%,rgba(20,33,61,.38) 0 3px,transparent 4px)}
+.tile span{position:relative;background:rgba(14,24,46,.72);padding:3px 10px;border-radius:999px}
+.tile::after{content:"";position:absolute;inset:0;margin:auto;width:40%;aspect-ratio:1;border:3px solid var(--cream);border-radius:50%;opacity:0}
+.tile.on::after{animation:ping var(--dur,1s) ease-out}
+@keyframes ping{0%{transform:scale(.3);opacity:.85}100%{transform:scale(3);opacity:0}}
+.tile:hover{filter:brightness(1.12)}
+.eq{display:flex;align-items:flex-end;gap:5px;height:56px}
+.eq i{flex:1;border-radius:4px;background:var(--coral);height:6px;transition:height .12s}
+.eq i:nth-child(3n){background:var(--sage)}
+.eq.live i{animation:eq var(--dur,1s) ease-out forwards}
+@keyframes eq{0%{height:var(--h,40px)}100%{height:6px}}
+.say{min-height:3.2em;font-size:15px;color:var(--cream)}
+.note{font-size:13px;color:var(--dim)}
+.points{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:22px}
+.points li{display:grid;grid-template-columns:44px minmax(0,1fr);gap:16px}
+.points b{font-family:var(--display);font-size:20px;display:block}
+.points .ic{width:44px;height:44px;border-radius:14px;background:var(--navy-2);border:2px solid var(--line);display:grid;place-items:center;color:var(--coral)}
+.points p{color:var(--muted)}
+.carta{margin-top:56px;background:var(--cream);color:var(--ink);border-radius:28px;padding:clamp(24px,4vw,48px);display:grid;grid-template-columns:minmax(0,1fr);gap:14px;max-width:760px}
+.carta .eyebrow{color:var(--terra-dk)}
+.carta p{font-size:18px}
+.carta .fin{font-family:var(--display);font-weight:700;font-size:20px}
+
+/* stand */
+.stand{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);margin-top:44px;align-items:start}
+.planbox{background:var(--cream);border-radius:20px;padding:10px}
+.planbox svg{display:block;width:100%;height:auto}
+.zone{cursor:pointer;transition:filter .15s}
+.zone:hover,.zone:focus-visible{filter:brightness(1.1)}
+.zone.sel rect.z{stroke:var(--navy);stroke-width:5}
+.zone text{pointer-events:none}
+.info{background:var(--navy-2);border:2px solid var(--line);border-radius:24px;padding:28px;display:flex;flex-direction:column;gap:12px;min-height:230px}
+.info .tag{align-self:flex-start;font-family:var(--display);font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;padding:5px 14px;border-radius:999px;background:var(--sage);color:var(--navy)}
+.info h3{font-size:34px;line-height:1.05;letter-spacing:-.02em}
+.info .msz{font-family:var(--display);font-weight:700;color:var(--coral);font-size:18px}
+.info p.d{color:var(--muted)}
+.size{font-family:var(--display);font-weight:800;font-size:clamp(28px,4vw,44px);color:var(--coral);margin-top:28px}
+.ruta{list-style:none;margin:20px 0 0;padding:0;display:flex;flex-direction:column;gap:12px;counter-reset:r}
+.ruta li{counter-increment:r;display:grid;grid-template-columns:36px minmax(0,1fr);gap:14px;align-items:start}
+.ruta li::before{content:counter(r);font-family:var(--display);font-weight:800;width:36px;height:36px;border-radius:50%;background:var(--coral);color:var(--navy);display:grid;place-items:center}
+.iso{margin:56px 0 0;background:var(--navy-0);border:2px solid var(--line);border-radius:24px;padding:clamp(12px,3vw,28px)}
+.iso svg{display:block;width:100%;height:auto}
+.iso figcaption{margin-top:12px;font-size:14px;color:var(--dim)}
+.callout{margin-top:28px;background:var(--navy-2);border-radius:20px;padding:22px 26px;max-width:640px}
+.callout b{font-family:var(--display);font-size:20px;display:block;margin-bottom:4px}
+.callout p{color:var(--muted)}
+
+/* 4C */
+.cs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin-top:44px}
+.c{border-radius:28px;padding:30px 26px 32px;display:flex;flex-direction:column;gap:12px;min-height:340px}
+.c .big{font-family:var(--display);font-weight:800;font-size:96px;line-height:.9}
+.c h3{font-size:34px;letter-spacing:-.02em}
+.c p{font-size:17px;line-height:1.45}
+.c.a{background:var(--navy);color:var(--cream)}.c.a .big{color:var(--coral)}.c.a p{color:var(--muted)}
+.c.b{background:var(--terra);color:#FBF7F0}.c.b .big{color:var(--navy)}
+.c.d{background:var(--sage);color:var(--navy)}.c.d .big{color:var(--navy)}
+.c small{margin-top:auto;font-family:var(--display);font-weight:700;font-size:14px;letter-spacing:.12em;text-transform:uppercase;opacity:.85}
+
+/* merch */
+.mg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:44px}
+.m{background:var(--navy-2);border:2px solid var(--line);color:var(--cream);border-radius:26px;padding:28px 24px;display:flex;flex-direction:column;gap:12px}
+.m.hot{background:var(--terra);border-color:var(--terra)}
+.m .when{font-family:var(--display);font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--sage)}
+.m.hot .when{color:var(--navy)}
+.m h3{font-size:26px;line-height:1.12}
+.m q{font-style:italic;color:var(--muted);quotes:"«" "»"}
+.m.hot q{color:#FBF7F0}
+.m .price{margin-top:auto;font-family:var(--display);font-weight:800;font-size:36px;color:var(--coral)}
+.m.hot .price{color:var(--navy)}
+.tot{margin-top:28px;display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 32px}
+.tot b{font-family:var(--display);font-size:clamp(30px,4vw,42px);color:var(--coral)}
+.tot p{color:var(--muted);max-width:56ch}
+.star{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(24px,5vw,72px);align-items:center;margin-top:64px;background:radial-gradient(circle at 28% 50%,#22325A 0%,var(--navy) 60%,var(--navy-0) 100%);color:var(--cream);border-radius:32px;padding:clamp(24px,5vw,64px)}
+.star svg{width:100%;max-width:420px;height:auto;justify-self:center}
+.star h3{font-size:clamp(36px,5.6vw,68px);line-height:1;letter-spacing:-.03em;margin:12px 0 18px}
+.star h3 em{font-style:normal;color:var(--coral)}
+.star p{color:var(--muted);font-size:18px}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.tags span{font-weight:600;font-size:15px;padding:8px 18px;border-radius:999px;background:var(--navy-2);border:2px solid var(--line)}
+.tags span.hot{background:var(--coral);border-color:var(--coral);color:var(--navy)}
+.src{margin-top:20px;font-size:14px;color:var(--dim)}
+
+/* presentacion / QR */
+.qrs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:44px;max-width:820px}
+.qr{background:#FBF7F0;border:2px solid var(--cream-2);color:var(--ink);border-radius:28px;padding:28px;display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center}
+.qr svg{width:100%;max-width:240px;height:auto;border-radius:10px}
+.qr h3{font-size:26px}
+.qr p{font-size:15px;color:var(--ink-2)}
+.qr a.btn{border-color:var(--navy);color:var(--navy);font-size:16px;padding:11px 22px}
+.qr a.btn:hover{background:var(--coral);border-color:var(--coral)}
+.vuelta{margin-top:28px;color:var(--ink-2);max-width:62ch}
+
+footer{background:var(--navy-0);border-top:1px solid var(--line);padding-block:32px;color:var(--dim);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between;align-items:center}
+footer svg{height:30px;width:auto;display:block}
+
+@media (max-width:900px){
+  .inv,.stand,.star{grid-template-columns:minmax(0,1fr)}
+  .cs,.mg{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .rings{right:-40%;opacity:.7}
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  .cs,.mg,.qrs{grid-template-columns:minmax(0,1fr)}
+  .c{min-height:0}
+  .btn{font-size:16px;padding:12px 22px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .rings i{animation:none;opacity:.12;transform:scale(2)}
+  .tile.on::after,.eq.live i{animation:none}
+}
+</style>
+
+<header>
+  <div class="wrap bar">
+    <a href="#inicio" aria-label="Eco, inicio"><svg viewBox="0 0 316 80" role="img" aria-label="Logo de eco" style="height:34px;width:auto"><defs><clipPath id="zth"><path d="M12 0H60V80H12A12 12 0 0 1 0 68V12A12 12 0 0 1 12 0Z"/></clipPath><clipPath id="zeh"><circle cx="141" cy="40" r="33"/></clipPath></defs><g clip-path="url(#zth)" fill="#E4644A" stroke="#E4644A" stroke-width="8" stroke-linejoin="round"><path d="M-2 4L46 4L46 12.74L-2 23.3Z"/><path d="M-2 35.58L46 25.02L46 54.98L-2 44.42Z"/><path d="M-2 56.7L46 67.26L46 76L-2 76Z"/></g><g fill="none" stroke="#E4644A" stroke-width="8"><path d="M57.38 25.14A20 20 0 0 1 57.38 54.86"/><path d="M65.41 16.22A32 32 0 0 1 65.41 63.78"/><path d="M73.44 7.3A44 44 0 0 1 73.44 72.7"/></g><g fill="none" stroke="#F4EFE6" stroke-width="13"><path d="M167.5 40A26.5 26.5 0 1 0 161.3 57.03"/><path d="M234.3 22.97A26.5 26.5 0 1 0 234.3 57.03"/><circle cx="283" cy="40" r="26.5"/></g><rect x="101" y="34.5" width="80" height="11" fill="#F4EFE6" clip-path="url(#zeh)"/></svg></a>
+    <nav aria-label="Secciones">
+      <a href="#invitacion">Invitación</a>
+      <a href="#stand">Stand</a>
+      <a href="#cuatro-c">Las 4C</a>
+      <a href="#merch">Merch</a>
+      <a class="cta" href="#contacto">Te esperamos</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+<section class="hero" style="padding-block:clamp(56px,10vw,128px)">
+  <div class="rings" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="wrap in">
+    <p class="eyebrow">Cevisama · Feria Valencia</p>
+    <h1>Ven a escuchar tu <em>cerámica.</em></h1>
+    <p class="lead">Eco fabrica fachadas cerámicas que bajan el ruido. En el stand B70 puedes tocarlas, oírlas y probar las 4C: comida, carne, cócteles y canciones.</p>
+    <div class="chips"><span class="chip hot">Stand B70</span><span class="chip">Cevisama</span><span class="chip">Feria Valencia</span></div>
+    <div class="btns"><a class="btn solid" href="#invitacion">Escucha la invitación</a><a class="btn" href="#stand">Ver el stand</a></div>
+  </div>
+</section>
+
+<section id="invitacion">
+  <div class="wrap">
+    <p class="eyebrow">La invitación</p>
+    <h2>Una invitación que <em>se escucha</em></h2>
+    <p class="lead" style="margin-top:16px">Es lo primero que recibe el cliente. Toca las tres baldosas y oye cómo cambia el eco según el acabado.</p>
+    <div class="inv">
+      <div class="phone" role="group" aria-label="Invitación digital de Eco">
+        <svg class="sym" viewBox="0 0 92 80" role="img" aria-label="Símbolo de eco" width="62"><defs><clipPath id="syp"><path d="M12 0H60V80H12A12 12 0 0 1 0 68V12A12 12 0 0 1 12 0Z"/></clipPath></defs><g clip-path="url(#syp)" fill="#E4644A" stroke="#E4644A" stroke-width="8" stroke-linejoin="round"><path d="M-2 4L46 4L46 12.74L-2 23.3Z"/><path d="M-2 35.58L46 25.02L46 54.98L-2 44.42Z"/><path d="M-2 56.7L46 67.26L46 76L-2 76Z"/></g><g fill="none" stroke="#E4644A" stroke-width="8"><path d="M57.38 25.14A20 20 0 0 1 57.38 54.86"/><path d="M65.41 16.22A32 32 0 0 1 65.41 63.78"/><path d="M73.44 7.3A44 44 0 0 1 73.44 72.7"/></g></svg>
+        <h3>Ven a escuchar tu <em>cerámica</em></h3>
+        <p class="sub">Stand B70 · Cevisama · Feria Valencia</p>
+        <div class="tiles">
+          <button class="tile" data-k="liso" type="button"><span>Liso</span></button>
+          <button class="tile" data-k="perforado" type="button"><span>Perforado</span></button>
+          <button class="tile" data-k="poroso" type="button"><span>Poroso</span></button>
+        </div>
+        <div class="eq" id="eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <p class="say" id="say" aria-live="polite">Toca una baldosa para escucharla.</p>
+        <p class="note">Sonido simulado: en el stand lo oyes con la cerámica real.</p>
+      </div>
+      <ul class="points">
+        <li><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span><div><b>Se abre en el móvil</b><p>Tocas las tres baldosas y escuchas la diferencia entre liso, perforado y poroso.</p></div></li>
+        <li><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M2 21l21-9L2 3v7l15 2-15 2z"/></svg></span><div><b>Llega por correo y LinkedIn</b><p>A arquitectos, constructoras y distribuidores.</p></div></li>
+        <li><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h8v8H3zm2 2v4h4V5zm8-2h8v8h-8zm2 2v4h4V5zM3 13h8v8H3zm2 2v4h4v-4zm10-2h2v2h-2zm2 2h2v2h-2zm-4 2h2v2h-2zm4 2h2v2h-2zm2-2h2v2h-2z"/></svg></span><div><b>También en papel</b><p>La carta impresa lleva un código QR que abre esta misma página.</p></div></li>
+        <li><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M4 4h16v12H8l-4 4z"/></svg></span><div><b>Te hablamos de tú</b><p>Cercanos y pensando en tu próximo proyecto.</p></div></li>
+      </ul>
+    </div>
+    <article class="carta" aria-label="Texto de la carta de invitación">
+      <p class="eyebrow">Carta de invitación</p>
+      <p>Hola:</p>
+      <p>Somos Eco, una empresa de cerámica con sede en Castellón y un laboratorio acústico en Módena. Estaremos en Cevisama, en Feria Valencia, en el stand B70.</p>
+      <p>Queremos que escuches tu cerámica. Toca el Muro que escucha, prueba nuestras 4C y habla con nosotros de tu próximo proyecto.</p>
+      <p class="fin">Te esperamos. Equipo Eco</p>
+    </article>
+  </div>
+</section>
+
+<section id="stand" style="background:var(--navy-0)">
+  <div class="wrap">
+    <p class="eyebrow">El stand</p>
+    <h2>Planta del <em>stand B70</em></h2>
+    <p class="lead" style="margin-top:16px">Un stand en isla de 12 × 9 m. Toca una zona para ver qué hay. Todo está revestido con Eco: las paredes son el producto.</p>
+    <div class="stand">
+      <div class="planbox"><svg viewBox="0 0 768 576" role="group" aria-label="Planta del stand B70, de 12 por 9 metros, con ocho zonas"><rect width="768" height="576" rx="10" fill="#F4EFE6"/><g stroke="#14213D" stroke-opacity=".08" stroke-width="2"><path d="M64 0V576"/><path d="M128 0V576"/><path d="M192 0V576"/><path d="M256 0V576"/><path d="M320 0V576"/><path d="M384 0V576"/><path d="M448 0V576"/><path d="M512 0V576"/><path d="M576 0V576"/><path d="M640 0V576"/><path d="M704 0V576"/><path d="M0 64H768"/><path d="M0 128H768"/><path d="M0 192H768"/><path d="M0 256H768"/><path d="M0 320H768"/><path d="M0 384H768"/><path d="M0 448H768"/><path d="M0 512H768"/></g><g fill="none" stroke="#14213D" stroke-width="4" stroke-dasharray="10 10" stroke-linecap="round"><path d="M384 540V360"/><path d="M290 290H170"/><path d="M480 290H600"/><path d="M384 220V140"/><path d="M330 352L250 420"/><path d="M440 352L520 420"/></g><g class="zone" data-z="almacen" tabindex="0" role="button" aria-label="Almacén"><rect class="z" x="6.4" y="6.4" width="121.6" height="121.6" rx="8" fill="#C9C1B1"/><text x="67.2" y="75.2" text-anchor="middle" font-family="Outfit,Arial,sans-serif" font-weight="700" font-size="26" fill="#14213D">Almacén</text></g><g class="zone" data-z="canciones" tabindex="0" role="button" aria-label="Canciones"><rect class="z" x="134.4" y="6.4" width="249.6" height="121.6" rx="8" fill="#E4644A"/><text x="259.2" y="63.2" text-anchor="middle" font-family="Outfit,Arial,sans-serif" font-weight="700" font-size="26" fill="#14213D">Canciones</text><text x="259.2" y="91.2" text-anchor="middle" font-family="Manrope,Arial,sans-serif" font-size="19" fill="#14213D">escenario</text></g><g class="zone" data-z="cocteles" tabindex="0" role="button" aria-label="Cócteles"><rect class="z" x="512.0" y="6.4" width="249.60000000000002" height="153.6" rx="8" fill="#E4644A"/><text x="636.8" y="79.2" text-anchor="middle" font-family="Outfit,Arial,sans-serif" font-weight="700" font-size="26" fill="#14213D">Cócteles</text><text x="636.8" y="107.2" text-anchor="middle" font-family="Manrope,Arial,sans-serif" font-size="19" fill="#14213D">barra «Silencio»</text></g><g class="zone" data-z="carne" tabindex="0" role="button" aria-label="Carne"><rect class="z" x="6.4" y="134.4" width="153.6" height="249.6" rx="8" fill="#C8553D"/><text x="83.2" y="255.2" text-anchor="middle" font-family="Outfit,Arial,sans-serif" font-weight="700" font-size="26" fill="#F4EFE6">Carne</text><text x="83.2" y="283.2" text-anchor="middle" font-family="Manrope,Arial,sans-serif" font-size="19" fill="#F4EFE6">en vivo</text></g><g class="zone" data-z="comida" tabindex="0" role="button" aria-label="Comida"><rect class="z" x="608.0" y="166.4" width="153.60000000000002" height="217.6" rx="8" fill="#C8553D"/><text x="684.8" y="271.2" text-anchor="middle" font-family="Outfit,Arial,sans-serif" font-weight="700" font-size="26" fill="#F4EFE6">Comida</text><text x="684.8" y="299.2" text-anchor="middle" font-family="Manrope,Arial,sans-serif" font-size="19" fill="#F4EFE6">tapas</text></g><g class="zone" data-z="reuniones" tabindex="0" role="button" aria-label="Reuniones"><rect class="z" x="6.4" y="416.0" width="249.6" height="153.60000000000002" rx="8" fill="#8FA998"/><text x="131.2" y="500.8" text-anchor="middle" font-family="Outfit,Arial,sans-serif" font-weight="700" font-size="26" fill="#14213D">Reuniones</text></g><g class="zone" data-z="tienda" tabindex="0" role="button" aria-label="Tienda · merch"><rect class="z" x="512.0" y="416.0" width="249.60000000000002" height="153.60000000000002" rx="8" fill="#8FA998"/><text x="636.8" y="500.8" text-anchor="middle" font-family="Outfit,Arial,sans-serif" font-weight="700" font-size="26" fill="#14213D">Tienda · merch</text></g><g class="zone" data-z="muro" tabindex="0" role="button" aria-label="Muro que escucha"><rect class="z" x="288.0" y="224.0" width="192.0" height="128.0" rx="8" fill="#14213D"/><text x="384.0" y="286.0" text-anchor="middle" font-family="Outfit,Arial,sans-serif" font-weight="700" font-size="24" fill="#F4EFE6">Muro que</text><text x="384.0" y="314.0" text-anchor="middle" font-family="Outfit,Arial,sans-serif" font-weight="700" font-size="24" fill="#F4EFE6">escucha</text><g fill="none" stroke="#E4644A" stroke-width="4" stroke-linecap="round"><path d="M486.0 264.0A30 30 0 0 1 486.0 312.0"/><path d="M500.0 250.0A48 48 0 0 1 500.0 326.0"/></g></g><path d="M384 556L368 574H400Z" fill="#14213D"/><text x="384" y="548" text-anchor="middle" font-family="Manrope,Arial,sans-serif" font-weight="700" font-size="17" fill="#14213D">Entrada</text></svg></div>
+      <div>
+        <div class="info" id="info" aria-live="polite">
+          <span class="tag" id="i-tag"></span>
+          <h3 id="i-name"></h3>
+          <p class="msz" id="i-m"></p>
+          <p class="d" id="i-d"></p>
+        </div>
+        <p class="size">12 × 9 m · 108 m²</p>
+        <ol class="ruta">
+          <li>Entras y te recibe el Muro que escucha.</li>
+          <li>Pruebas las 4C: comida, carne, cócteles y canciones.</li>
+          <li>Te sientas a hablar de tu proyecto.</li>
+          <li>Te llevas un objeto Eco de la tienda.</li>
+        </ol>
+      </div>
+    </div>
+    <figure class="render">
+      <img src="img/render-stand.jpg" width="1024" height="572" alt="Render del stand B70 visto desde el pasillo: muro azul central con tres muestras cerámicas, zonas Reuniones, Canciones, Silencio y Comida">
+      <figcaption>Render ilustrativo generado con IA a partir de la planta. Puede diferir en detalles (logo, posición de algunas zonas).</figcaption>
+    </figure>
+    <figure class="iso iso-box">
+      <svg viewBox="0 0 666 493" role="img" aria-label="Vista isométrica del stand B70 con las zonas Almacén, Canciones, Cócteles, Carne, Comida, Reuniones, Tienda y el Muro que escucha en el centro"><polygon points="24.0,248.4 377.3,452.4 377.3,460.9 24.0,256.9" fill="#D8D0C0" /><polygon points="642.3,299.4 377.3,452.4 377.3,460.9 642.3,307.9" fill="#B9B1A1" /><polygon points="289.0,95.4 642.3,299.4 377.3,452.4 24.0,248.4" fill="#F4EFE6" /><path d="M318.4 112.4L53.4 265.4M347.9 129.4L82.9 282.4M377.3 146.4L112.3 299.4M406.8 163.4L141.8 316.4M436.2 180.4L171.2 333.4M465.7 197.4L200.7 350.4M495.1 214.4L230.1 367.4M524.6 231.4L259.6 384.4M554.0 248.4L289.0 401.4M583.5 265.4L318.4 418.4M612.9 282.4L347.9 435.4M259.6 112.4L612.9 316.4M230.1 129.4L583.5 333.4M200.7 146.4L554.0 350.4M171.2 163.4L524.6 367.4M141.8 180.4L495.1 384.4M112.3 197.4L465.7 401.4M82.9 214.4L436.2 418.4M53.4 231.4L406.8 435.4" stroke="#14213D" stroke-opacity=".09" stroke-width="1" fill="none"/><polygon points="233.1,56.3 289.0,88.6 289.0,163.4 233.1,131.1" fill="#a49e91" /><polygon points="344.9,56.3 289.0,88.6 289.0,163.4 344.9,131.1" fill="#847f74" /><polygon points="289.0,24.0 344.9,56.3 289.0,88.6 233.1,56.3" fill="#C9C1B1" /><polygon points="291.9,148.1 406.8,214.4 406.8,231.4 291.9,165.1" fill="#ba523c" /><polygon points="462.7,182.1 406.8,214.4 406.8,231.4 462.7,199.1" fill="#964230" /><polygon points="347.9,115.8 462.7,182.1 406.8,214.4 291.9,148.1" fill="#E4644A" /><polygon points="115.3,161.7 185.9,202.5 185.9,239.9 115.3,199.1" fill="#a44532" /><polygon points="300.8,136.2 185.9,202.5 185.9,239.9 300.8,173.6" fill="#843828" /><polygon points="230.1,95.4 300.8,136.2 185.9,202.5 115.3,161.7" fill="#C8553D" /><polygon points="29.9,221.2 144.7,287.5 144.7,314.7 29.9,248.4" fill="#758a7c" /><polygon points="215.4,246.7 144.7,287.5 144.7,314.7 215.4,273.9" fill="#5e6f64" /><polygon points="100.6,180.4 215.4,246.7 144.7,287.5 29.9,221.2" fill="#8FA998" /><polygon points="259.6,183.8 347.9,234.8 347.9,316.4 259.6,265.4" fill="#101b32" /><polygon points="406.8,200.8 347.9,234.8 347.9,316.4 406.8,282.4" fill="#0d1528" /><polygon points="318.4,149.8 406.8,200.8 347.9,234.8 259.6,183.8" fill="#14213D" /><polygon points="264.0,198.3 287.5,211.8 287.5,266.2 264.0,252.7" fill="#C8553D" /><polygon points="291.9,214.4 315.5,228.0 315.5,282.4 291.9,268.8" fill="#B9492F" /><circle cx="297.8" cy="262.0" r="2.2" fill="#14213D" fill-opacity=".6"/><circle cx="297.8" cy="249.1" r="2.2" fill="#14213D" fill-opacity=".6"/><circle cx="297.8" cy="236.2" r="2.2" fill="#14213D" fill-opacity=".6"/><circle cx="297.8" cy="223.2" r="2.2" fill="#14213D" fill-opacity=".6"/><circle cx="309.6" cy="268.8" r="2.2" fill="#14213D" fill-opacity=".6"/><circle cx="309.6" cy="255.9" r="2.2" fill="#14213D" fill-opacity=".6"/><circle cx="309.6" cy="243.0" r="2.2" fill="#14213D" fill-opacity=".6"/><circle cx="309.6" cy="230.0" r="2.2" fill="#14213D" fill-opacity=".6"/><polygon points="319.9,230.6 343.5,244.2 343.5,298.6 319.9,285.0" fill="#8a4533" /><polygon points="451.0,236.5 565.8,302.8 565.8,340.2 451.0,273.9" fill="#ba523c" /><polygon points="636.5,262.0 565.8,302.8 565.8,340.2 636.5,299.4" fill="#964230" /><polygon points="521.6,195.7 636.5,262.0 565.8,302.8 451.0,236.5" fill="#E4644A" /><polygon points="392.1,324.9 462.7,365.7 462.7,399.7 392.1,358.9" fill="#a44532" /><polygon points="562.8,307.9 462.7,365.7 462.7,399.7 562.8,341.9" fill="#843828" /><polygon points="492.2,267.1 562.8,307.9 462.7,365.7 392.1,324.9" fill="#C8553D" /><polygon points="262.5,348.7 377.3,415.0 377.3,449.0 262.5,382.7" fill="#758a7c" /><polygon points="448.0,374.2 377.3,415.0 377.3,449.0 448.0,408.2" fill="#5e6f64" /><polygon points="333.2,307.9 448.0,374.2 377.3,415.0 262.5,348.7" fill="#8FA998" /><text x="289.0" y="61.3" text-anchor="middle" font-family="Outfit,Arial,sans-serif" font-weight="700" font-size="13" fill="#F4EFE6" stroke="#14213D" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">Almacén</text><text x="359.7" y="154.8" text-anchor="middle" font-family="Outfit,Arial,sans-serif" font-weight="700" font-size="13" fill="#F4EFE6" stroke="#14213D" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">Canciones</text><text x="208.0" y="153.9" text-anchor="middle" font-family="Outfit,Arial,sans-serif" font-weight="700" font-size="13" fill="#F4EFE6" stroke="#14213D" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">Carne</text><text x="122.6" y="239.0" text-anchor="middle" font-family="Outfit,Arial,sans-serif" font-weight="700" font-size="13" fill="#F4EFE6" stroke="#14213D" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">Reuniones</text><text x="333.2" y="197.3" text-anchor="middle" font-family="Outfit,Arial,sans-serif" font-weight="700" font-size="13" fill="#F4EFE6" stroke="#14213D" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">Muro que escucha</text><text x="543.7" y="254.2" text-anchor="middle" font-family="Outfit,Arial,sans-serif" font-weight="700" font-size="13" fill="#F4EFE6" stroke="#14213D" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">Cócteles</text><text x="477.5" y="321.4" text-anchor="middle" font-family="Outfit,Arial,sans-serif" font-weight="700" font-size="13" fill="#F4EFE6" stroke="#14213D" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">Comida</text><text x="355.3" y="366.4" text-anchor="middle" font-family="Outfit,Arial,sans-serif" font-weight="700" font-size="13" fill="#F4EFE6" stroke="#14213D" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">Tienda · merch</text><text x="174.2" y="365.7" text-anchor="middle" font-family="Manrope,Arial,sans-serif" font-weight="700" font-size="13" fill="#F4EFE6">▲ Entrada</text></svg>
+      <figcaption>Vista isométrica dibujada a partir de la planta. Es un esquema, no un render fotorrealista. Las medidas y las alturas son estimadas hasta confirmar con la organización de la feria.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="cuatro-c" class="on-cream">
+  <div class="wrap">
+    <p class="eyebrow">Las 4C</p>
+    <h2>Cuatro excusas para <em>probar la cerámica</em></h2>
+    <div class="cs">
+      <div class="c a"><span class="big">C</span><h3>Comida</h3><p>Tapas valencianas servidas sobre baldosas Eco.</p><small>Zona Comida</small></div>
+      <div class="c b"><span class="big">C</span><h3>Carne</h3><p>Jamón ibérico cortado en directo, junto al Muro.</p><small>Zona Carne</small></div>
+      <div class="c a"><span class="big">C</span><h3>Cócteles</h3><p>Barra «Silencio»: un cóctel para cada acabado.</p><small>Zona Cócteles</small></div>
+      <div class="c d"><span class="big">C</span><h3>Canciones</h3><p>Guitarra en directo: escucha la diferencia con y sin Eco.</p><small>Escenario</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="merch">
+  <div class="wrap">
+    <p class="eyebrow">Merchandising</p>
+    <h2>Hecho en casa con <em>nuestros recortes</em></h2>
+    <p class="lead" style="margin-top:16px">Tres objetos acompañan la visita y salen de la cerámica que sobra en producción.</p>
+    <div class="photos">
+      <figure><img src="img/merch-taza.jpg" alt="Taza de cerámica con base de corcho" loading="lazy"><figcaption>Posavasos silencioso</figcaption></figure>
+      <figure><img src="img/merch-amplificador.jpg" alt="Amplificador pasivo de cerámica para teléfono" loading="lazy"><figcaption>Amplificador pasivo</figcaption></figure>
+      <figure><img src="img/merch-llavero.jpg" alt="Ilustración de un llavero de cerámica con ondas de sonido" loading="lazy"><figcaption>Llavero que suena</figcaption></figure>
+    </div>
+    <div class="mg" style="margin-top:44px">
+      <article class="m hot"><p class="when">1 · Reunión</p><h3>Posavasos silencioso</h3><q>Tu café, en silencio.</q><p class="price">1,45 €</p></article>
+      <article class="m"><p class="when">2 · Después</p><h3>Amplificador «al revés»</h3><q>La misma cerámica, al revés: aquí el sonido crece.</q><p class="price">10,80 €</p></article>
+      <article class="m"><p class="when">3 · Al salir</p><h3>Llavero que suena</h3><q>Golpéalo y suena: el gesto de nuestro taller, en tu bolsillo.</q><p class="price">≈ 1 € (estimado)</p></article>
+    </div>
+    <p class="src">Coste por pieza: materiales extra (corcho, cordón, argolla, embalaje); el llavero es una estimación. La mano de obra y las máquinas ya están en los costes fijos. La imagen del llavero es una ilustración.</p>
+
+    <div class="star">
+      <svg viewBox="0 0 640 640" role="img" aria-label="Posavasos visto desde arriba: recorte perforado con el símbolo de Eco en corcho"><rect x="40" y="40" width="560" height="560" rx="36" fill="#B9492F"/><g fill="#14213D" fill-opacity=".55"><circle cx="100" cy="100" r="10"/><circle cx="170" cy="100" r="10"/><circle cx="240" cy="100" r="10"/><circle cx="310" cy="100" r="10"/><circle cx="380" cy="100" r="10"/><circle cx="450" cy="100" r="10"/><circle cx="520" cy="100" r="10"/><circle cx="100" cy="170" r="10"/><circle cx="170" cy="170" r="10"/><circle cx="450" cy="170" r="10"/><circle cx="520" cy="170" r="10"/><circle cx="100" cy="240" r="10"/><circle cx="520" cy="240" r="10"/><circle cx="100" cy="310" r="10"/><circle cx="520" cy="310" r="10"/><circle cx="100" cy="380" r="10"/><circle cx="520" cy="380" r="10"/><circle cx="100" cy="450" r="10"/><circle cx="170" cy="450" r="10"/><circle cx="450" cy="450" r="10"/><circle cx="520" cy="450" r="10"/><circle cx="100" cy="520" r="10"/><circle cx="170" cy="520" r="10"/><circle cx="240" cy="520" r="10"/><circle cx="310" cy="520" r="10"/><circle cx="380" cy="520" r="10"/><circle cx="450" cy="520" r="10"/><circle cx="520" cy="520" r="10"/></g><circle cx="320" cy="320" r="190" fill="none" stroke="#F4EFE6" stroke-opacity=".5" stroke-width="5" stroke-dasharray="16 14"/><defs><clipPath id="pt"><path d="M12 0H60V80H12A12 12 0 0 1 0 68V12A12 12 0 0 1 12 0Z"/></clipPath></defs><g transform="translate(210 224) scale(2.4)"><g clip-path="url(#pt)" fill="#D9B48A" stroke="#D9B48A" stroke-width="8" stroke-linejoin="round"><path d="M-2 4L46 4L46 12.74L-2 23.3Z"/><path d="M-2 35.58L46 25.02L46 54.98L-2 44.42Z"/><path d="M-2 56.7L46 67.26L46 76L-2 76Z"/></g><g fill="none" stroke="#D9B48A" stroke-width="8"><path d="M57.38 25.14A20 20 0 0 1 57.38 54.86"/><path d="M65.41 16.22A32 32 0 0 1 65.41 63.78"/><path d="M73.44 7.3A44 44 0 0 1 73.44 72.7"/></g></g></svg>
+      <div>
+        <p class="eyebrow">El objeto estrella</p>
+        <h3>Tu café, <em>en silencio.</em></h3>
+        <p>Un recorte perforado de 12 × 12 cm. El símbolo de Eco está recortado y relleno de corcho: el vaso o la taza se apoya en el logo y no hace «toc».</p>
+        <div class="tags"><span>Recorte de producción</span><span>Corcho natural</span><span>Cada pieza es única</span><span class="hot">1,45 € por pieza</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contacto" class="on-cream">
+  <div class="wrap">
+    <p class="eyebrow">Te esperamos</p>
+    <h2>Ven a escuchar <em>tu cerámica</em></h2>
+    <p class="lead" style="margin-top:16px">Stand B70, junto al área The New Architectonics. Toca el Muro que escucha, prueba las 4C y habla con nosotros de tu próximo proyecto.</p>
+    <div class="go">
+      <div class="chips"><span class="chip hot">Stand B70</span><span class="chip" style="color:var(--cream)">Cevisama · Feria Valencia</span><span class="chip" style="color:var(--cream)">Fechas: por confirmar</span></div>
+      <div class="btns"><a class="btn" style="border-color:var(--navy);color:var(--navy)" href="#stand">Ver el stand otra vez</a></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <svg viewBox="0 0 316 80" role="img" aria-label="Logo de eco" style="height:30px;width:auto"><defs><clipPath id="ztf"><path d="M12 0H60V80H12A12 12 0 0 1 0 68V12A12 12 0 0 1 12 0Z"/></clipPath><clipPath id="zef"><circle cx="141" cy="40" r="33"/></clipPath></defs><g clip-path="url(#ztf)" fill="#E4644A" stroke="#E4644A" stroke-width="8" stroke-linejoin="round"><path d="M-2 4L46 4L46 12.74L-2 23.3Z"/><path d="M-2 35.58L46 25.02L46 54.98L-2 44.42Z"/><path d="M-2 56.7L46 67.26L46 76L-2 76Z"/></g><g fill="none" stroke="#E4644A" stroke-width="8"><path d="M57.38 25.14A20 20 0 0 1 57.38 54.86"/><path d="M65.41 16.22A32 32 0 0 1 65.41 63.78"/><path d="M73.44 7.3A44 44 0 0 1 73.44 72.7"/></g><g fill="none" stroke="#F4EFE6" stroke-width="13"><path d="M167.5 40A26.5 26.5 0 1 0 161.3 57.03"/><path d="M234.3 22.97A26.5 26.5 0 1 0 234.3 57.03"/><circle cx="283" cy="40" r="26.5"/></g><rect x="101" y="34.5" width="80" height="11" fill="#F4EFE6" clip-path="url(#zef)"/></svg>
+    <p>Eco es una marca ficticia creada para un proyecto del curso de español de UNIMORE. Cifras y medidas son estimaciones del proyecto.</p>
+  </div>
+</footer>
+
+<script>
+/* sonido simulado: un chasquido con una cola de eco que cambia según el acabado */
+var ctx=null;
+var FIN={
+  liso:{tail:1.9,wet:1.0,tone:2600,say:'Liso: el sonido rebota y el eco dura.',h:[44,52,38,50,42,54,40,48,36,50,44,52]},
+  perforado:{tail:.6,wet:.55,tone:1600,say:'Perforado: los agujeros atrapan parte del sonido.',h:[30,36,26,34,28,38,24,32,26,34,30,36]},
+  poroso:{tail:.14,wet:.18,tone:800,say:'Poroso: absorbe casi todo y queda silencio.',h:[16,20,14,18,12,20,14,18,12,16,14,20]}
+};
+function audio(){
+  try{
+    if(!ctx){var A=window.AudioContext||window.webkitAudioContext;if(!A)return null;ctx=new A();}
+    if(ctx.state==='suspended')ctx.resume();
+    return ctx;
+  }catch(e){return null;}
+}
+function impulse(c,sec){
+  var n=Math.floor(c.sampleRate*sec),b=c.createBuffer(2,n,c.sampleRate);
+  for(var ch=0;ch<2;ch++){var d=b.getChannelData(ch);for(var i=0;i<n;i++){d[i]=(Math.random()*2-1)*Math.pow(1-i/n,3);}}
+  return b;
+}
+function play(k){
+  var p=FIN[k];
+  var say=document.getElementById('say'),eq=document.getElementById('eq');
+  say.textContent=p.say;
+  var dur=Math.max(.5,p.tail);
+  document.querySelectorAll('.tile').forEach(function(t){t.classList.remove('on');t.style.removeProperty('--dur');});
+  var tile=document.querySelector('.tile[data-k="'+k+'"]');
+  tile.style.setProperty('--dur',dur+'s');
+  void tile.offsetWidth;tile.classList.add('on');
+  var bars=eq.children;
+  eq.classList.remove('live');
+  for(var i=0;i<bars.length;i++){bars[i].style.setProperty('--h',p.h[i%p.h.length]+'px');}
+  eq.style.setProperty('--dur',dur+'s');
+  void eq.offsetWidth;eq.classList.add('live');
+  var c=audio();if(!c)return;
+  try{
+    var t=c.currentTime,len=Math.floor(c.sampleRate*.03);
+    var nb=c.createBuffer(1,len,c.sampleRate),d=nb.getChannelData(0);
+    for(var j=0;j<len;j++){d[j]=(Math.random()*2-1)*(1-j/len);}
+    var src=c.createBufferSource();src.buffer=nb;
+    var f=c.createBiquadFilter();f.type='bandpass';f.frequency.value=p.tone;f.Q.value=.8;
+    var master=c.createGain();master.gain.value=.7;master.connect(c.destination);
+    var dry=c.createGain();dry.gain.value=.9;
+    var conv=c.createConvolver();conv.buffer=impulse(c,p.tail);
+    var wet=c.createGain();wet.gain.value=p.wet;
+    src.connect(f);f.connect(dry);dry.connect(master);f.connect(conv);conv.connect(wet);wet.connect(master);
+    src.start(t);
+  }catch(e){}
+}
+document.querySelectorAll('.tile').forEach(function(b){b.addEventListener('click',function(){play(b.getAttribute('data-k'));});});
+
+/* planta interactiva */
+var ZONES={"muro": {"tag": "Producto", "name": "Muro que escucha", "m": "3 × 2 m aprox.", "d": "Lo primero que ves al entrar. Tres muestras para tocar y escuchar: lisa, perforada y porosa."}, "canciones": {"tag": "C · Canciones", "name": "Canciones", "m": "Escenario · 3,9 × 1,9 m aprox.", "d": "Guitarra en directo: escucha la diferencia con y sin Eco."}, "cocteles": {"tag": "C · Cócteles", "name": "Cócteles", "m": "Barra «Silencio» · 3,9 × 2,4 m aprox.", "d": "Un cóctel para cada acabado."}, "carne": {"tag": "C · Carne", "name": "Carne", "m": "En vivo · 2,4 × 3,9 m aprox.", "d": "Jamón ibérico cortado en directo, junto al Muro."}, "comida": {"tag": "C · Comida", "name": "Comida", "m": "Tapas · 2,4 × 3,4 m aprox.", "d": "Tapas valencianas servidas sobre baldosas Eco."}, "reuniones": {"tag": "Negocio", "name": "Reuniones", "m": "3,9 × 2,4 m aprox.", "d": "Siéntate a hablar de tu proyecto, con muestras y datos técnicos delante."}, "tienda": {"tag": "Merch", "name": "Tienda · merch", "m": "3,9 × 2,4 m aprox.", "d": "Llévate un objeto Eco, hecho con nuestros recortes de producción."}, "almacen": {"tag": "Servicio", "name": "Almacén", "m": "1,9 × 1,9 m aprox.", "d": "Muestras y material del equipo. Zona sin acceso al público."}};
+function show(key){
+  var z=ZONES[key];if(!z)return;
+  document.getElementById('i-tag').textContent=z.tag;
+  document.getElementById('i-name').textContent=z.name;
+  document.getElementById('i-m').textContent=z.m;
+  document.getElementById('i-d').textContent=z.d;
+  document.querySelectorAll('.zone').forEach(function(g){g.classList.toggle('sel',g.getAttribute('data-z')===key);});
+}
+document.querySelectorAll('.zone').forEach(function(g){
+  g.addEventListener('click',function(){show(g.getAttribute('data-z'));});
+  g.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();show(g.getAttribute('data-z'));}});
+});
+show('muro');
+</script>
+
+</body></html>
